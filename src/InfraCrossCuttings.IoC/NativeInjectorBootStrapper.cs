@@ -1,4 +1,6 @@
-﻿using Domain.Commands.CommandsHandlers.Custumers;
+﻿using Application.Interfaces;
+using Application.Services;
+using Domain.Commands.CommandsHandlers.Custumers;
 using Domain.Commands.Persons.Custumers;
 using Domain.Core.Events;
 using Domain.Events.Persons.Custumers;
@@ -23,7 +25,7 @@ namespace InfraCrossCuttings.IoC
             services.AddScoped<IMediatorHandler, InMemoryBus>();
 
             // Application
-           // services.AddScoped<ICustomerAppService, CustomerAppService>();
+            services.AddScoped<ICustomerAppService, CustomerAppService>();
 
             // Domain - Events
             services.AddScoped<INotificationHandler<CustomerRegisteredEvent>, CustomerEventHandler>();
