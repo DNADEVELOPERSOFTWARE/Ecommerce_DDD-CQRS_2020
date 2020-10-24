@@ -1,9 +1,9 @@
-﻿using Domain.Core.Events;
+﻿using System.Threading.Tasks;
+using Domain.Core.Events;
 using FluentValidation.Results;
 using MediatR;
 using NetDevPack.Mediator;
 using NetDevPack.Messaging;
-using System.Threading.Tasks;
 
 namespace Infra.CrossCutting.Bus
 {

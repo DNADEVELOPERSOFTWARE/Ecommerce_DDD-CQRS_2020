@@ -1,14 +1,13 @@
-﻿using Domain.Commands.Persons.Custumers;
+﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
+using Domain.Commands.Persons.Custumers;
 using Domain.Events.Persons.Custumers;
-using Domain.Interfaces;
-using Domain.Models;
+using Domain.Interfaces.Persons.Custumers;
+using Domain.Models.Persons.Custumers;
 using FluentValidation.Results;
 using MediatR;
 using NetDevPack.Messaging;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
-
 
 namespace Domain.Commands.CommandsHandlers.Custumers
 {

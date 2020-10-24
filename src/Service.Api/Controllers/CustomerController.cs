@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Application.EventSourcedNormalizers;
-using Application.Interfaces;
-using Application.ViewModels;
+using Application.EventSourcedNormalizers.Persons.Custumers;
+using Application.Interfaces.Persons.Custumers;
+using Application.ViewModels.Persons.Custumers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NetDevPack.Identity.Authorization;

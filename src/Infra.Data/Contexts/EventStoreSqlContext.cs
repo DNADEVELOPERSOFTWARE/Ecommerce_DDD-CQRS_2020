@@ -1,4 +1,4 @@
-﻿    using Domain.Core.Events;
+﻿using Domain.Core.Events;
 using Infra.Data.Mappings.StordiesEvents;
 using Microsoft.EntityFrameworkCore;
 

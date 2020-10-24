@@ -1,11 +1,11 @@
-﻿using Domain.Interfaces;
-using Domain.Models;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Domain.Interfaces.Persons.Custumers;
+using Domain.Models.Persons.Custumers;
 using Infra.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
 using NetDevPack.Data;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Infra.Data.Repositories.Persons
 {
@@ -22,6 +22,7 @@ namespace Infra.Data.Repositories.Persons
 
         public IUnitOfWork UnitOfWork => Db;
 
+        //Métodos de pesquisa
         public async Task<Customer> GetById(Guid id)
         {
             return await DbSet.FindAsync(id);
@@ -37,6 +38,7 @@ namespace Infra.Data.Repositories.Persons
             return await DbSet.AsNoTracking().FirstOrDefaultAsync(c => c.Email == email);
         }
 
+        //Métodos CRUD
         public void Add(Customer customer)
         {
             DbSet.Add(customer);

@@ -1,4 +1,4 @@
-﻿using Domain.Models;
+﻿using Domain.Models.Persons.Custumers;
 using Infra.Data.Mappings.Persons.Custumers;
 using Microsoft.EntityFrameworkCore;
 using NetDevPack.Data;

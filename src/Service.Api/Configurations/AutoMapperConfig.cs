@@ -1,4 +1,4 @@
-﻿using Application.AutMapper;
+﻿using Application.AutoMapper.Persons.Custumers;
 using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 using System;
